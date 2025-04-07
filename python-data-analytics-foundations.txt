@@ -1,0 +1,180 @@
+1. Level 1: Foundations
+1.1 Python Basics for Data Work
+* 1.1.1 Variables and data types
+* 1.1.2 Lists, dictionaries, tuples, and sets
+* 1.1.3 Arithmetic and comparison operators
+* 1.1.4 Loops (for, while) and conditionals (if, elif, else)
+* 1.1.5 Functions and parameters
+* 1.1.6 List comprehensions and basic lambda functions
+
+1.2 Working with Data Structures
+* 1.2.1 Creating and manipulating arrays
+* 1.2.2 Indexing and slicing (1D and 2D)
+* 1.2.3 Boolean filtering and masking
+* 1.2.4 Element-wise operations and broadcasting
+* 1.2.5 Aggregation: sum(), mean(), std(), min(), max()
+* 1.2.6 Reshaping and flattening data
+
+1.3 Working with Tabular Data
+* 1.3.1 Loading CSVs and external files
+* 1.3.2 Understanding DataFrames and Series
+* 1.3.3 Selecting rows and columns ([], .loc[], .iloc[])
+* 1.3.4 Filtering with conditions
+* 1.3.5 Adding, modifying, and dropping columns
+* 1.3.6 Renaming columns
+
+1.4 Data Cleaning
+* 1.4.1 Inspecting data: head(), info(), describe()
+* 1.4.2 Handling missing values (isna(), fillna(), dropna())
+* 1.4.3 Converting data types (astype())
+* 1.4.4 Cleaning and transforming text data (str.lower(), str.strip(), str.replace())
+* 1.4.5 Replacing and mapping values
+
+1.5 Exploratory Data Analysis (EDA)
+* 1.5.1 Descriptive statistics (mean(), median(), quantile(), std())
+* 1.5.2 Frequency and distribution (value_counts(), unique())
+* 1.5.3 Sorting and ranking (sort_values(), rank())
+* 1.5.4 Basic plotting (hist(), bar(), line(), plot())
+
+2. Level 2: Intermediate
+2.1 Advanced Selection & Filtering
+* 2.1.1 Filtering with multiple conditions (&, |, ~)
+* 2.1.2 Querying with .query()
+* 2.1.3 isin(), between(), and null-safe filters
+* 2.1.4 Indexing and setting indexes
+
+2.2 Transforming Data
+* 2.2.1 Applying functions with apply() and lambda
+* 2.2.2 Vectorized operations vs loops
+* 2.2.3 Binning and categorizing with cut() and qcut()
+* 2.2.4 Reordering and renaming values
+
+2.3 Grouping & Aggregation
+* 2.3.1 Grouping with groupby()
+* 2.3.2 Aggregation functions: agg(), sum(), count(), mean()
+* 2.3.3 Multi-level grouping and aggregation
+* 2.3.4 Transforming groups with transform() and apply()
+* 2.3.5 Filtering groups with filter()
+
+2.4 Merging & Joining
+* 2.4.1 Merging DataFrames with merge()
+* 2.4.2 Left, right, inner, and outer joins
+* 2.4.3 Joining on multiple keys
+* 2.4.4 Concatenating with concat() and append()
+* 2.4.5 Merging with indicators and suffixes
+
+2.5 Pivoting & Reshaping
+* 2.5.1 Pivoting with pivot() and pivot_table()
+* 2.5.2 Melting with melt()
+* 2.5.3 Stacking and unstacking
+* 2.5.4 Wide vs long format data
+
+2.6 Date & Time Handling
+* 2.6.1 Converting to datetime (to_datetime())
+* 2.6.2 Extracting parts: year, month, day, etc.
+* 2.6.3 Date arithmetic (differences, offsets, durations)
+* 2.6.4 Resampling and rolling windows
+* 2.6.5 Time-based filtering and indexing
+
+2.7 Intermediate Visualization
+* 2.7.1 Line plots, bar charts, histograms with matplotlib or pandas
+* 2.7.2 Plotting groups and trends
+* 2.7.3 Adding labels, titles, and legends
+* 2.7.4 Styling plots for presentations
+* 2.7.5 Intro to seaborn for statistical visualizations
+
+3. Level 3: Advanced
+3.1 Performance Optimization
+* 3.1.1 Understanding pandas performance bottlenecks
+* 3.1.2 Using vectorized operations instead of apply()
+* 3.1.3 Avoiding unnecessary copies (copy() vs views)
+* 3.1.4 Optimizing memory with category and type downcasting
+* 3.1.5 Chunking large files and read_csv() with chunksize
+
+3.2 Advanced Functions & Logic
+* 3.2.1 Custom functions with apply() and np.where()
+* 3.2.2 Multi-condition logic with nested np.select()
+* 3.2.3 Complex reshaping with pivot + multi-index
+* 3.2.4 Using .pipe() to build clean transformation pipelines
+
+3.3 MultiIndex and Hierarchical Data
+* 3.3.1 Creating MultiIndex DataFrames
+* 3.3.2 Accessing and slicing MultiIndex
+* 3.3.3 Aggregating and reshaping with hierarchical indices
+* 3.3.4 Flattening MultiIndex for export and presentation
+
+3.4 Advanced Time Series Analysis
+* 3.4.1 Working with business date ranges and frequencies
+* 3.4.2 Advanced resampling (e.g., week-to-month)
+* 3.4.3 Rolling, expanding, and exponential moving averages
+* 3.4.4 Lagging and leading time series
+* 3.4.5 Time series joins and gap filling (e.g., asfreq(), ffill())
+
+3.5 Statistical Analysis & Correlation
+* 3.5.1 Covariance and correlation matrices
+* 3.5.2 Z-scores, percentiles, and outlier detection
+* 3.5.3 Group comparisons (t-test, ANOVA via scipy.stats)
+* 3.5.4 Normalization and scaling
+* 3.5.5 Linear trendlines and regression with numpy.polyfit()
+
+3.6 Working with JSON & Nested Data
+* 3.6.1 Loading JSON data with pandas
+* 3.6.2 Flattening nested data structures
+* 3.6.3 Normalizing records with json_normalize()
+* 3.6.4 Extracting nested fields with apply()
+
+3.7 Exporting, Reporting, and Automation
+* 3.7.1 Exporting to Excel, CSV, and databases
+* 3.7.2 Formatting Excel exports with xlsxwriter
+* 3.7.3 Automating reports with scripts and task schedulers
+* 3.7.4 Logging and error handling in data pipelines
+* 3.7.5 Emailing reports or visualizations with Python
+
+4. Level 4: Statistics & Calculus for Data Analysis
+4.1 Descriptive Statistics
+* 4.1.1 Measures of central tendency (mean, median, mode)
+* 4.1.2 Measures of spread (range, variance, standard deviation)
+* 4.1.3 Interquartile range and percentiles
+* 4.1.4 Skewness and kurtosis
+* 4.1.5 Summary statistics with pandas and NumPy
+
+4.2 Probability Foundations
+* 4.2.1 Basic probability rules (addition, multiplication)
+* 4.2.2 Conditional probability and independence
+* 4.2.3 Discrete vs continuous variables
+* 4.2.4 Bayes' Theorem (conceptual + example)
+
+4.3 Probability Distributions
+* 4.3.1 Uniform, Binomial, Poisson distributions
+* 4.3.2 Normal (Gaussian) distribution
+* 4.3.3 Z-scores and standard normal
+* 4.3.4 Central Limit Theorem (CLT)
+* 4.3.5 Using scipy.stats to work with distributions
+
+4.4 Inferential Statistics
+* 4.4.1 Sampling methods and bias
+* 4.4.2 Confidence intervals
+* 4.4.3 Hypothesis testing framework
+* 4.4.4 t-tests, chi-squared tests, and ANOVA
+* 4.4.5 P-values and significance levels
+
+4.5 Correlation & Regression
+* 4.5.1 Covariance vs correlation
+* 4.5.2 Pearson and Spearman correlation
+* 4.5.3 Simple linear regression (slope and intercept)
+* 4.5.4 R  and model fit
+* 4.5.5 Residual analysis
+
+4.6 Calculus Concepts for Analytics
+* 4.6.1 Derivatives and rates of change (intuition)
+* 4.6.2 Partial derivatives and multivariable functions
+* 4.6.3 Optimization: local minima/maxima
+* 4.6.4 Gradient descent basics (used in ML)
+* 4.6.5 Area under curves and integration (applied to probability)
+
+4.7 Real-World Applications
+* 4.7.1 Using distributions to model events (e.g. sales, churn)
+* 4.7.2 Regression for forecasting
+* 4.7.3 Outlier detection with Z-scores and IQR
+* 4.7.4 Statistical tests for A/B testing
+* 4.7.5 Interpreting model output and coefficients
